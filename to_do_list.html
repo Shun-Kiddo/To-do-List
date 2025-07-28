@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="to_do_list_style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="my-container">
+        <div class="title">
+            <h1 class="title1">To-Do</h1>
+            <h1 class="title2">List</h1>
+        </div>
+        <p class="sub-title">Do your tasks kupal!</p>
+        <form id="todo-form" class="todo-form">
+            <input class="add-task" type="text" id="todo-input" placeholder="Add a new task..." required>
+            <input class="add-date" type="date" required>
+            <input class="add-time" type="time" required>
+            <button class="submit-button" type="submit">Add Task</button>
+        </form>
+        <h2 class="task">Tasks to-do</h2>
+        <div class="task-list">
+            <table id="todo-table" border="1" class="task-table">
+                <thead>
+                    <tr>
+                    <th>Done</th>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Default Data -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="to_do_list_script.js"></script>
+</body>
+</html> 
